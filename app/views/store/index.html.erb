@@ -8,5 +8,5 @@
 <%= image_tag(product.image_url)%>
 <h3><%=product.title%></h3>
 <%=sanitize product.description%>
-<div class="price_line"><span><%= product.price%></span></div>
+<div class="price_line"><span><%= number_to_currency(product.price)%></span></div>
 <%end%>
